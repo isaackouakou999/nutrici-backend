@@ -28,8 +28,8 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// ✅ Routes API
-app.use('/api/auth', authRoutes);
+// ✅ Routes API (CORRIGÉ)
+app.use('/api', authRoutes);           
 app.use('/api/categories', categorieRoutes);
 app.use('/api/produits', produitRoutes);
 app.use('/api/clients', clientRoutes);
